@@ -1,0 +1,244 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  scroll-behavior: smooth;
+  padding-top: 0px; /* space for fixed navbar */
+}
+
+/* Container for consistent spacing */
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.logo:hover{
+  color: #336;
+  cursor: pointer;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin:0 1070px 0 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff7b00;
+}
+
+/* Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-icons a {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-icons a:hover {
+  color: #ff7b00;
+}
+
+/* Hero Section */
+.hero-heading {
+  text-align: center;
+  padding: 30px 10px 50px;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+}
+
+.hero-heading h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.hero-heading p {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Hero Cards */
+.hero {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-text h1 sup {
+  font-size: 1rem;
+  border: 2px solid #000;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 15px 0;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #111;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.buy-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.buy-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.learn-btn {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.learn-btn:hover {
+  background-color: #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #999;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-icons {
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 80%;
+    text-align: center;
+  }
+}
